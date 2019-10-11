@@ -356,5 +356,6 @@
 "Assets/scripts/skill/enum/DamageMode.cs"
 "Assets/scripts/skill/enum/SkillAttackType.cs"
 "Assets/scripts/skill/SkillData.cs"
+"Assets/scripts/skill/SkillDeployer.cs"
 "Assets/scripts/test/arrayhelper/EnemyHealth.cs"
 "Assets/scripts/test/arrayhelper/TestArrayHelper.cs"

@@ -2,17 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SkillDeployer : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
+namespace ARPGDemo.Skill {
+    public class SkillDeployer : MonoBehaviour
     {
-        
-    }
+        // Start is called before the first frame update
+        public SkillData skilldata { set; get; }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        public void DeploySkill() {
+        }
     }
 }
+

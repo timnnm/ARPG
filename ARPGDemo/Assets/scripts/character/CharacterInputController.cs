@@ -20,6 +20,7 @@ namespace ARPGDemo.Character
 
         public void JoystickMoveEnd(MovingJoystick move)
         {
+            chMotor.Move(move.joystickAxis.x, move.joystickAxis.y);
         }
 
         private void OnEnable()
