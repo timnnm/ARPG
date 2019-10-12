@@ -1,16 +1,18 @@
 ﻿<Properties StartupConfiguration="{FE24CA0D-316B-4626-0684-5F4DFB041F44}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/EasyTouch/Plugins/EasyJoystick.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/character/PlayerStatus.cs">
     <Files>
-      <File FileName="Assets/scripts/skill/CharacterSkillManager.cs" Line="10" Column="6" />
+      <File FileName="Assets/scripts/character/CharacterInputController.cs" Line="38" Column="52" />
+      <File FileName="Assets/scripts/skill/CharacterSkillManager.cs" Line="49" Column="26" />
+      <File FileName="Assets/EasyTouch/Plugins/EasyButton.cs" />
+      <File FileName="Assets/scripts/skill/SkillDeployer.cs" />
       <File FileName="Assets/scripts/skill/SkillData.cs" />
-      <File FileName="Assets/scripts/common/GameObjectPool.cs" />
-      <File FileName="Assets/scripts/common/TransformHelper.cs" />
-      <File FileName="Assets/scripts/test/arrayhelper/EnemyHealth.cs" />
-      <File FileName="Assets/scripts/test/arrayhelper/TestArrayHelper.cs" />
-      <File FileName="Assets/scripts/common/ArrayHelper.cs" />
-      <File FileName="Assets/scripts/skill/SkillDeployer.cs" Line="15" Column="1" />
-      <File FileName="Assets/scripts/character/CharacterInputController.cs" Line="29" Column="23" />
-      <File FileName="Assets/EasyTouch/Plugins/EasyJoystick.cs" Line="53" Column="14" />
+      <File FileName="Assets/scripts/common/GameObjectPool.cs" Line="5" Column="37" />
+      <File FileName="Assets/EasyTouch/Plugins/MonoSingleton.cs" Line="13" Column="22" />
+      <File FileName="Assets/scripts/skill/AttackSelector/NewInterface.cs" Line="14" Column="1" />
+      <File FileName="Assets/scripts/character/IOnDamager.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/character/CharacterAnimation.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/character/CharacterStatus.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/character/PlayerStatus.cs" Line="34" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -18,14 +20,16 @@
           <Node name="ARPGDemo" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="EasyTouch" expanded="True">
-                <Node name="Plugins" expanded="True">
-                  <Node name="EasyJoystick.cs" selected="True" />
-                </Node>
+                <Node name="Plugins" expanded="True" />
               </Node>
               <Node name="scripts" expanded="True">
-                <Node name="character" expanded="True" />
+                <Node name="character" expanded="True">
+                  <Node name="PlayerStatus.cs" selected="True" />
+                </Node>
                 <Node name="common" expanded="True" />
-                <Node name="skill" expanded="True" />
+                <Node name="skill" expanded="True">
+                  <Node name="AttackSelector" expanded="True" />
+                </Node>
                 <Node name="test" expanded="True">
                   <Node name="arrayhelper" expanded="True" />
                 </Node>
@@ -38,7 +42,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="27f1a459-7931-487b-8bf3-221d816ebfce" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="5d567277-c055-4b5a-b974-4520b478d184" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

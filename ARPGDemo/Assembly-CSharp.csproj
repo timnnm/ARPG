@@ -120,6 +120,7 @@
     <Compile Include="Assets\scripts\common\ArrayHelper.cs" />
     <Compile Include="Assets\scripts\common\GameObjectPool.cs" />
     <Compile Include="Assets\scripts\common\TransformHelper.cs" />
+    <Compile Include="Assets\scripts\skill\AttackSelector\NewInterface.cs" />
     <Compile Include="Assets\scripts\skill\CharacterSkillManager.cs" />
     <Compile Include="Assets\scripts\skill\enum\DamageMode.cs" />
     <Compile Include="Assets\scripts\skill\enum\SkillAttackType.cs" />

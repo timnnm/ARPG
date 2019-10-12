@@ -47,6 +47,7 @@ namespace ARPGDemo.Skill {
 
         //准备技能
         public SkillData PrepareSkill(int id) {
+
             SkillData skill = skills.Find(delegate (SkillData obj)
             {
                 return obj.skillID == id;
