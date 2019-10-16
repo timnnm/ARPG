@@ -6,7 +6,7 @@ namespace ARPGDemo.Character
     public class Door : MonoBehaviour, IOnDamager
     {
 
-        public void OnDamage()
+        public void OnDamage(int damageVal)
         {
 
         }

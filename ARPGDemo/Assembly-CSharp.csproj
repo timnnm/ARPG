@@ -120,14 +120,20 @@
     <Compile Include="Assets\scripts\common\ArrayHelper.cs" />
     <Compile Include="Assets\scripts\common\GameObjectPool.cs" />
     <Compile Include="Assets\scripts\common\TransformHelper.cs" />
-    <Compile Include="Assets\scripts\skill\AttackSelector\NewInterface.cs" />
+    <Compile Include="Assets\scripts\skill\AttackSelector\CircleAttackSelector.cs" />
+    <Compile Include="Assets\scripts\skill\AttackSelector\IAttackSelector.cs" />
+    <Compile Include="Assets\scripts\skill\AttackSelector\SectorAttackSelector.cs" />
     <Compile Include="Assets\scripts\skill\CharacterSkillManager.cs" />
     <Compile Include="Assets\scripts\skill\enum\DamageMode.cs" />
     <Compile Include="Assets\scripts\skill\enum\SkillAttackType.cs" />
+    <Compile Include="Assets\scripts\skill\SelfImpact\CostSPISelfImpact.cs" />
+    <Compile Include="Assets\scripts\skill\SelfImpact\ISelfImpact.cs" />
     <Compile Include="Assets\scripts\skill\SkillData.cs" />
     <Compile Include="Assets\scripts\skill\SkillDeployer.cs" />
+    <Compile Include="Assets\scripts\skill\TargetImpact\ITargetImpact.cs" />
     <Compile Include="Assets\scripts\test\arrayhelper\EnemyHealth.cs" />
     <Compile Include="Assets\scripts\test\arrayhelper\TestArrayHelper.cs" />
+    <Compile Include="Assets\scripts\test\arrayhelper\TestSelector.cs" />
     <None Include="Assets\EasyTouch\Readme_first.txt" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>/Users/mac/Desktop/git/UnityARPG/ARPGDemo/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>

@@ -8,7 +8,7 @@ namespace ARPGDemo.Character
 
         public int GiveExp;
 
-        override public void OnDamage()
+        override public void OnDamage(int damageVal)
         {
 
         }

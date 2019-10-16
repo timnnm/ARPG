@@ -4,7 +4,7 @@ namespace ARPGDemo.Character
 {
     public interface IOnDamager
     {
-        void OnDamage();
+         void  OnDamage(int damage);
 
     }
 }

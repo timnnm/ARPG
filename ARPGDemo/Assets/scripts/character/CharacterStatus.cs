@@ -19,7 +19,18 @@ namespace ARPGDemo.Character
         /// <summary>
         /// 受击
         /// </summary>
-        abstract public void OnDamage();
+        virtual public  void OnDamage(int damageVal)
+        {
+            damageVal -= Defence;
+            if (damageVal > 0) HP -= damageVal;
+            if (HP <= 0) Dead();
+        }
+
+        public Transform HitFxPos;
+        private void Start()
+        {
+            HitFxPos = TransformHelper.FindChild(this.transform, "HitFxPos");
+        }
 
 
         /// <summary>

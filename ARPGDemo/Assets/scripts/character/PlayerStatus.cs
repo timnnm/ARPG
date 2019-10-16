@@ -27,7 +27,7 @@ namespace ARPGDemo.Character
         }
 
 
-        override public void OnDamage()
+        override public void OnDamage(int damageVal)
         {
 
         }
