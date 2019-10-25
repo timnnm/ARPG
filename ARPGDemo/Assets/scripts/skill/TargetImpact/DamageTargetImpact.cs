@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
 using ARPGDemo.Character;
 namespace ARPGDemo.Skill
 {
@@ -15,9 +16,13 @@ namespace ARPGDemo.Skill
 
         public void TargetImpact(SkillDeployer deployer, SkillData skillData, GameObject gameobject)
         {
+            if (skillData.Onwer != null) {
+
+                baseDamage = skillData.Onwer.GetComponent<CharacterStatus>().Damage;
+            }
 
 
-
+            deployer.StartCoroutine(RepeatDamage(deployer,skillData));
         }
 
 
@@ -28,7 +33,6 @@ namespace ARPGDemo.Skill
             chStatus.OnDamage((int)realDamage);
             if (skillData.hitFxName != null && skillData.hitFxPerfab != null) {
                 GameObject hitEffect = GameObjectPool.instance.CreateObject(skillData.hitFxName, skillData.hitFxPerfab, chStatus.HitFxPos.position, chStatus.HitFxPos.rotation);
-
                 hitEffect.transform.parent = chStatus.HitFxPos;
 
                 GameObjectPool.instance.CollectObject(hitEffect, 0.2f);
@@ -41,6 +45,7 @@ namespace ARPGDemo.Skill
             float damageTime = 0;
             do
             {
+                if (skillData.attackTargets == null) break;
 
                 for (int i = 0; i < skillData.attackTargets.Length; i++) {
 
@@ -53,7 +58,7 @@ namespace ARPGDemo.Skill
                 yield return new WaitForSeconds(skillData.damageInterval);
                 damageTime += skillData.damageInterval;
 
-
+                skillData.attackTargets = deploy.ResetTargets();
 
             } while (damageTime < skillData.durationTime);
 

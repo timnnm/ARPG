@@ -27,10 +27,7 @@ namespace ARPGDemo.Character
         }
 
 
-        override public void OnDamage(int damageVal)
-        {
-
-        }
+        
 
         public override void Dead()
         {

@@ -6,9 +6,17 @@ namespace ARPGDemo.Skill
 {
     public class CircleAttackSelector : IAttackSelector
     {
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="skillData"></param>
+        /// <param name="skilltransform">技能位置</param>
+        /// <returns></returns>
         public GameObject[] SelectTagrget(SkillData skillData, Transform skilltransform)
         {
             Collider[] objs = Physics.OverlapSphere(skilltransform.position, skillData.attackDistance);
+
+           
 
             if (objs == null || objs.Length == 0) return null;
 
