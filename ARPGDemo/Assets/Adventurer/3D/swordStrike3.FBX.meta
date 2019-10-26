@@ -285,7 +285,12 @@ ModelImporter:
   - first:
       137: 13700000
     second: adventurer
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 01 - Default
+    second: {fileID: 2100000, guid: 8a6393b22fc215f40ad0c1226a3d70d7, type: 2}
   materials:
     importMaterials: 1
     materialName: 3
@@ -303,7 +308,7 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
-    importAnimatedCustomProperties: 0
+    importAnimatedCustomProperties: 1
     importConstraints: 0
     animationCompression: 3
     animationRotationError: 0.5
@@ -316,7 +321,7 @@ ModelImporter:
     - serializedVersion: 16
       name: swordStrike3
       takeName: 
-      internalID: 0
+      internalID: 7400002
       firstFrame: 1
       lastFrame: 45
       wrapMode: 0
@@ -338,10 +343,11 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
-      - time: 0.59500766
+      - time: 0.60163015
         functionName: OnMeleeAttack
         data: 
-        objectReferenceParameter: {instanceID: 0}
+        objectReferenceParameter: {fileID: 11500000, guid: 3805abeee7ef741d58d6d337d4c4fff1,
+          type: 3}
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
