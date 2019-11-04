@@ -12,7 +12,7 @@ namespace ARPGDemo.Character
             anim = this.GetComponentInChildren<Animator>();
         }
 
-        public void PlayAnimation(string name, bool show)
+        public void PlayAnimation(string name, bool show=true)
         {
             anim.SetBool(name, show);
         }

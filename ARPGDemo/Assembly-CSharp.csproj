@@ -111,6 +111,7 @@
     <Compile Include="Assets\scripts\character\CharacterAnimation.cs" />
     <Compile Include="Assets\scripts\character\CharacterInputController.cs" />
     <Compile Include="Assets\scripts\character\CharacterMotor.cs" />
+    <Compile Include="Assets\scripts\character\CharacterSkillSystem.cs" />
     <Compile Include="Assets\scripts\character\CharacterStatus.cs" />
     <Compile Include="Assets\scripts\character\Door.cs" />
     <Compile Include="Assets\scripts\character\Equipment.cs" />
