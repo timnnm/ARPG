@@ -10,7 +10,7 @@ namespace ARPGDemo.Skill {
     {
         // Start is called before the first frame update
         [SerializeField]
-        List<SkillData> skills = new List<SkillData>();
+        public List<SkillData> skills = new List<SkillData>();
 
 
         private void Start()
