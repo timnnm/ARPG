@@ -5,6 +5,7 @@ using UnityEngine;
 namespace ARPGDemo.Character {
     public class AnimationEventBehaviour : MonoBehaviour
     {
+ 
         public Animator anim;
 
         private void Start()

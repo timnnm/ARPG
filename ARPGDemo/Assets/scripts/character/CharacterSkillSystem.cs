@@ -27,11 +27,13 @@ namespace ARPGDemo.Character{
 
         public void AttackUseSkill(int skillId,bool isBatter)
         {
-            if (currentUseSkill != null) {
+            if (currentUseSkill != null&&isBatter) {
                 skillId = currentUseSkill.nextBatterId;
             }
             currentUseSkill = skillMgr.PrepareSkill(skillId);
 
+            if (currentUseSkill == null) return;
+            Debug.Log("==PPP"+ currentUseSkill.animationName);
             chAnim.PlayAnimation(currentUseSkill.animationName);
 
             var selectedTarget = SelectTarget();
@@ -96,9 +98,6 @@ namespace ARPGDemo.Character{
                 var skillid = skillMgr.skills[index].skillID;
                 AttackUseSkill(skillid, false);
             }
-
-
-
         }
 
     }

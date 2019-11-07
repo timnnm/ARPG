@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-using  ARPGDemo.Skill;
-
 namespace ARPGDemo.Character
 {
     public class CharacterInputController : MonoBehaviour
@@ -27,22 +25,20 @@ namespace ARPGDemo.Character
         }
 
         private void ButtonDown(string buttonName) {
-            Debug.Log("ButtonDown===");
-            CharacterSkillManager skillManager = this.GetComponent<CharacterSkillManager>();
-
-            SkillData skillData = null;
 
 
+            var skillSystem = this.GetComponent<CharacterSkillSystem>();
             switch (buttonName) {
                 case "skill1":
-                    skillData = skillManager.PrepareSkill(11);
+                    skillSystem.AttackUseSkill(11,false);
                     break;
                 case "skill2":
-                    skillData = skillManager.PrepareSkill(12);
+                    Debug.Log("==GGGGGGG");
+                    skillSystem.AttackUseSkill(12, false);
                     break;
             }
 
-            if (skillData != null) skillManager.DeploySkill(skillData);
+           
         }
 
         private void OnEnable()
