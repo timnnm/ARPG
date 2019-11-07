@@ -1,21 +1,7 @@
 ﻿<Properties StartupConfiguration="{FE24CA0D-316B-4626-0684-5F4DFB041F44}|">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Top Down/Standard Assets/Image Effects (Pro Only)/SSAOEffect.cs">
     <Files>
-      <File FileName="Assets/scripts/character/CharacterSkillSystem.cs" Line="87" Column="33" />
-      <File FileName="Assets/scripts/character/CharacterAnimation.cs" />
-      <File FileName="Assets/scripts/character/AnimationEventBehaviour.cs" />
-      <File FileName="Assets/scripts/skill/SkillData.cs" Line="1" Column="1" />
-      <File FileName="Assets/scripts/skill/CharacterSkillManager.cs" Line="13" Column="38" />
-      <File FileName="Assets/scripts/character/CharacterInputController.cs" />
-      <File FileName="Assets/scripts/character/CharacterMotor.cs" />
-      <File FileName="Assets/scripts/skill/AttackSelector/SectorAttackSelector.cs" />
-      <File FileName="Assets/scripts/skill/AttackSelector/CircleAttackSelector.cs" Line="31" Column="1" />
-      <File FileName="Assets/scripts/skill/SkillDeployer.cs" Line="1" Column="1" />
-      <File FileName="Assets/scripts/skill/MeleeSkillDeployer.cs" Line="1" Column="1" />
-      <File FileName="Assets/scripts/skill/DeployerConfig.cs" Line="1" Column="1" />
-      <File FileName="Assets/scripts/character/PlayerStatus.cs" Line="1" Column="1" />
-      <File FileName="Assets/scripts/character/CharacterStatus.cs" Line="1" Column="1" />
-      <File FileName="Assets/scripts/skill/enum/SkillAttackType.cs" Line="1" Column="1" />
+      <File FileName="Assets/Top Down/Standard Assets/Image Effects (Pro Only)/SSAOEffect.cs" Line="75" Column="2" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -23,10 +9,15 @@
           <Node name="ARPGDemo" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="EasyTouch" expanded="True" />
-              <Node name="scripts" expanded="True">
-                <Node name="character" expanded="True">
-                  <Node name="CharacterSkillSystem.cs" selected="True" />
+              <Node name="FX" expanded="True">
+                <Node name="FT_MagicEffects_volume02" expanded="True">
+                  <Node name="Prefab" expanded="True" />
                 </Node>
+                <Node name="FT_Pulse_volume01" expanded="True" />
+                <Node name="IGSoft_Resources" expanded="True" />
+              </Node>
+              <Node name="scripts" expanded="True">
+                <Node name="character" expanded="True" />
                 <Node name="common" expanded="True" />
                 <Node name="skill" expanded="True">
                   <Node name="AttackSelector" expanded="True" />
@@ -38,6 +29,13 @@
                   <Node name="arrayhelper" expanded="True" />
                 </Node>
               </Node>
+              <Node name="Top Down" expanded="True">
+                <Node name="Standard Assets" expanded="True">
+                  <Node name="Image Effects (Pro Only)" expanded="True">
+                    <Node name="SSAOEffect.cs" selected="True" />
+                  </Node>
+                </Node>
+              </Node>
             </Node>
           </Node>
         </State>
@@ -46,7 +44,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="69f25bda-c94e-447f-a787-2402a105db6c" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="c4c4e423-92ac-4f9d-9a8b-fe9a8cedbf5d" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
