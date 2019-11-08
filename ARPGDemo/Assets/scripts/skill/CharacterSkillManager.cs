@@ -35,6 +35,8 @@ namespace ARPGDemo.Skill {
 
         public GameObject LoadPrefab(string resName) {
 
+            Debug.Log("reloadSkillPrefab:" + resName);
+
             GameObject prefabgo = Resources.Load<GameObject>(resName);
 
 
@@ -63,6 +65,7 @@ namespace ARPGDemo.Skill {
 
         //释放技能
         public void DeploySkill(SkillData skillData) {
+            Debug.Log("sendFFF");
            GameObject skill =  GameObjectPool.instance.CreateObject(skillData.perfabName, skillData.skillPerfab,
                 skillData.Onwer.transform.position, skillData.Onwer.transform.rotation);
 

@@ -33,7 +33,7 @@ namespace ARPGDemo.Character
                     skillSystem.AttackUseSkill(11,false);
                     break;
                 case "skill2":
-                    Debug.Log("==GGGGGGG");
+                  
                     skillSystem.AttackUseSkill(12, false);
                     break;
             }

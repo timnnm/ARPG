@@ -19,12 +19,14 @@ namespace ARPGDemo.Character {
 
         public void OnAttack()
         {
+            Debug.Log("GGGGG");
             if (attackHandler != null) {
                 attackHandler();
             }
         }
         public void OnCancelAnim(string animName)
         {
+            Debug.Log("FFFFF");
             anim.SetBool(animName, false);
         }
     }

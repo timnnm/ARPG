@@ -663,6 +663,7 @@ GameObject:
   - component: {fileID: 1800143509}
   - component: {fileID: 1800143514}
   - component: {fileID: 1800143515}
+  - component: {fileID: 1800143516}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -761,7 +762,7 @@ MonoBehaviour:
   - skillID: 11
     name: 
     description: 
-    coolTime: 5
+    coolTime: 0
     coolRemain: 0
     costSP: 5
     attackDistance: 5
@@ -775,9 +776,9 @@ MonoBehaviour:
     durationTime: 0
     damageInterval: 0
     Onwer: {fileID: 0}
-    perfabName: Cube
+    perfabName: CircleAttackSkill
     skillPerfab: {fileID: 0}
-    animationName: 
+    animationName: attack2
     hitFxName: 
     hitFxPerfab: {fileID: 0}
     level: 0
@@ -801,9 +802,9 @@ MonoBehaviour:
     durationTime: 0
     damageInterval: 0
     Onwer: {fileID: 0}
-    perfabName: Sphere
+    perfabName: SectorAttackSkill
     skillPerfab: {fileID: 0}
-    animationName: 
+    animationName: attack3
     hitFxName: 
     hitFxPerfab: {fileID: 0}
     level: 0
@@ -833,6 +834,18 @@ MonoBehaviour:
   HitFxPos: {fileID: 0}
   Exp: 0
   MaxExp: 0
+--- !u!114 &1800143516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1800143508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a57836364a3e142198bbb911069b2597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1854000905
 GameObject:
   m_ObjectHideFlags: 0

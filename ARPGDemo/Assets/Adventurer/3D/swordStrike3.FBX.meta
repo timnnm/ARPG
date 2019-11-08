@@ -344,15 +344,15 @@ ModelImporter:
       curves: []
       events:
       - time: 0.60163015
-        functionName: OnMeleeAttack
-        data: 
+        functionName: OnAttack
+        data: attack3
         objectReferenceParameter: {fileID: 11500000, guid: 3805abeee7ef741d58d6d337d4c4fff1,
           type: 3}
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
       - time: 0.96585363
-        functionName: CancelAnim
+        functionName: OnCancelAnim
         data: attack3
         objectReferenceParameter: {instanceID: 0}
         floatParameter: 0

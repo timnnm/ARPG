@@ -22,7 +22,7 @@ namespace ARPGDemo.Character{
             chAnim = this.GetComponent<CharacterAnimation>();
             skillMgr = this.GetComponent<CharacterSkillManager>();
 
-            GetComponent<AnimationEventBehaviour>().attackHandler += DeploySkill;
+            GetComponentInChildren<AnimationEventBehaviour>().attackHandler += DeploySkill;
         }
 
         public void AttackUseSkill(int skillId,bool isBatter)
@@ -33,7 +33,6 @@ namespace ARPGDemo.Character{
             currentUseSkill = skillMgr.PrepareSkill(skillId);
 
             if (currentUseSkill == null) return;
-            Debug.Log("==PPP"+ currentUseSkill.animationName);
             chAnim.PlayAnimation(currentUseSkill.animationName);
 
             var selectedTarget = SelectTarget();
@@ -48,6 +47,11 @@ namespace ARPGDemo.Character{
 
         public void DeploySkill()
         {
+            if (currentUseSkill != null)
+            {
+                skillMgr.DeploySkill(currentUseSkill);
+            }
+               
 
         }
 
